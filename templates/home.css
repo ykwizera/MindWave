@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f5f5f5;
+  background-color: #ffffff; /* White background */
 }
 
 .content {
@@ -24,17 +24,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3b945e;
+  background-color: #4a90e2; /* New blue background */
   padding: 1rem 2rem;
 }
 
 .logo h1 {
   font-size: 2rem;
-  color: #fff;
+  color: #fff; /* White logo text */
 }
 
 .logo h1 span {
-  color: #ffd700;
+  color: #ffd700; /* Gold accent for the logo */
 }
 
 .navlinks ul {
@@ -44,7 +44,7 @@ body {
 }
 
 .navlinks a {
-  color: #fff;
+  color: #fff; /* White text for links */
   text-decoration: none;
 }
 
@@ -52,8 +52,8 @@ body {
 .nav_buttons button {
   padding: 0.5rem 1rem;
   border: none;
-  background-color: #ffd700;
-  color: #3b945e;
+  background-color: #ffd700; /* Gold button */
+  color: #4a90e2; /* Blue text */
   cursor: pointer;
   border-radius: 4px;
   transition: 0.3s;
@@ -61,13 +61,13 @@ body {
 
 .nav_buttons a button:hover,
 .nav_buttons button:hover {
-  background-color: #e5c100;
+  background-color: #e5c100; /* Darker gold hover */
 }
 
 /* Hero section */
 .hero {
-  background-color: #3b945e;
-  color: #fff;
+  background-color: #4a90e2; /* New blue background */
+  color: #fff; /* White text */
   padding: 3rem 1rem;
   text-align: center;
 }
@@ -88,8 +88,8 @@ body {
 }
 
 .hero a {
-  background-color: #ffd700;
-  color: #3b945e;
+  background-color: #ffd700; /* Gold button */
+  color: #4a90e2; /* Blue text */
   padding: 0.7rem 1.5rem;
   border-radius: 4px;
   text-decoration: none;
@@ -97,13 +97,13 @@ body {
 }
 
 .hero a:hover {
-  background-color: #e5c100;
+  background-color: #e5c100; /* Darker gold on hover */
 }
 
 /* Mission and Vision sections */
 .section {
   padding: 3rem 1rem;
-  background-color: #fff;
+  background-color: #fff; /* White background */
   text-align: center;
 }
 
@@ -114,19 +114,19 @@ body {
 
 .section h2 {
   font-size: 2rem;
-  color: #3b945e;
+  color: #4a90e2; /* New blue color */
   margin-bottom: 1rem;
 }
 
 .section p {
   font-size: 1.1rem;
-  color: #666;
+  color: #666; /* Dark gray text */
 }
 
 /* Footer styling */
 .new_footer_area {
-  background-color: #3b945e;
-  color: #fff;
+  background-color: #4a90e2; /* New blue background */
+  color: #fff; /* White text */
   padding: 2rem 0;
 }
 
@@ -145,13 +145,13 @@ body {
 
 .f_widget h3 {
   font-size: 1.2rem;
-  color: #ffd700;
+  color: #ffd700; /* Gold heading */
   margin-bottom: 0.5rem;
 }
 
 .f_widget p {
   font-size: 0.9rem;
-  color: #ddd;
+  color: #ddd; /* Light gray text */
 }
 
 /* Quick Links and Help sections arranged in one row */
@@ -174,13 +174,13 @@ body {
 }
 
 .f_links li a {
-  color: #ddd;
+  color: #ddd; /* Light gray links */
   text-decoration: none;
   font-size: 0.9rem;
 }
 
 .f_links li a:hover {
-  color: #ffd700;
+  color: #ffd700; /* Gold hover effect */
 }
 
 /* Social Media Icons */
@@ -190,29 +190,29 @@ body {
 }
 
 .f_social_icon a {
-  color: #fff;
+  color: #fff; /* White icons */
   font-size: 1.5rem;
   transition: 0.3s;
 }
 
 .f_social_icon a:hover {
-  color: #ffd700;
+  color: #ffd700; /* Gold hover effect */
 }
 
 /* Footer Bottom */
 .footer_bottom {
-  background-color: #2c6a4f;
+  background-color: #3b6b8f; /* Dark blue background */
   padding: 1rem 0;
   text-align: center;
 }
 
 .footer_bottom p {
-  color: #ddd;
+  color: #ddd; /* Light gray text */
   font-size: 0.9rem;
 }
 
 .footer_bottom a {
-  color: #ffd700;
+  color: #ffd700; /* Gold links */
   text-decoration: none;
 }
 
@@ -232,4 +232,50 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+/* Footer Search Input & Button Styling */
+.f_subscribe_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.f_subscribe_two .form-control {
+  padding: 0.75rem;
+  width: 200px;
+  border: 1px solid #ffd700; /* Gold border */
+  border-radius: 25px;
+  font-size: 0.9rem;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.f_subscribe_two .form-control:focus {
+  outline: none;
+  border-color: #4a90e2; /* Blue focus */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.f_subscribe_two .btn_get {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd700; /* Gold button */
+  border: none;
+  border-radius: 25px;
+  color: #4a90e2; /* Blue text */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.f_subscribe_two .btn_get:hover {
+  background-color: #4a90e2; /* Blue on hover */
+  color: #fff; /* White text on hover */
+}
+
+.f_subscribe_two .btn_get:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
 }
