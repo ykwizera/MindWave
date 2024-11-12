@@ -4,38 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link
-      rel="stylesheet"
-      href="{{url_for('static', filename='css/user.css')}}"
-    />
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <div class="main-content">
       <div class="container">
         <h2>WELCOME BACK!</h2>
 
-        <form id="loginForm" action="" , method="POST">
-          {{form.csrf_token}}{{form.hidden_tag()}}
+        <form id="loginForm" action="" method="POST">
           <div class="form-group">
             <label for="username">Email</label>
-            {{form.email (id='username')}}
+            <input type="email" id="username" name="email" required />
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            {{form.password (id='password')}}
+            <input type="password" id="password" name="password" required />
           </div>
-          {{form.submit (class="btn")}}
+          <button type="submit" class="btn">Log In</button>
         </form>
+        
         <div class="options">
-          <a href="{{url_for('reset')}}" id="forgotPassword"
-            >Forgot Password?</a
-          >
+          <a href="reset.html" id="forgotPassword">Forgot Password?</a>
           <span> | </span>
-          <a href="{{url_for('signup')}}" id="signUp">Sign Up</a>
+          <a href="signup.html" id="signUp">Sign Up</a>
         </div>
       </div>
     </div>
-    <footer>©2024 LingoSmart. All rights reserved.</footer>
-    <script src="script.js"></script>
   </body>
 </html>
